@@ -7,6 +7,10 @@ body {
   background-color: #6666FF;
 }
 
+.title {
+  cursor: pointer;
+}
+
 .custom_button {
     padding: 14px 24px;
     width: 20rem;

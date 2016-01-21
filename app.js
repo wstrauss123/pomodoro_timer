@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   var minutes;
   var seconds;
   var totalSeconds = 1500;
@@ -16,6 +15,10 @@ $(document).ready(function() {
     $('#sound')[0].pause();
     $('#sound')[0].currentTime = 0;
   }
+
+$(".title").click(function(){
+    location.reload();
+});
 
   // 25 minute pomodoro timer.
   function myTimer() {
@@ -86,5 +89,10 @@ $(document).ready(function() {
     $("button").hide();
     $(".color_me").animate({backgroundColor: '#007D00'},2500);
     var handel = setInterval(myTimer, 1000);
+    playAlarm();
+    setTimeout(myAlarm, 5500);
+    function myAlarm() {
+      stopAlarm();
+    };
   });
 });
