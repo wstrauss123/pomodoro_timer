@@ -89,7 +89,7 @@ $(".title").click(function(){
     $("button").hide();
     $(".color_me").animate({backgroundColor: '#007D00'},2500);
     var handel = setInterval(myTimer, 1000);
-    playAlarm();
+    //playAlarm();
     setTimeout(myAlarm, 5500);
     function myAlarm() {
       stopAlarm();
